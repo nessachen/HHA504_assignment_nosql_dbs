@@ -20,5 +20,4 @@ for _, row in df.iterrows():
     patient_data = row.to_dict()
     r.set(patient_data['PatientID'], json.dumps(patient_data))
 
-print("Patient data stored in Redis successfully.")
-
+print("data inserted")
